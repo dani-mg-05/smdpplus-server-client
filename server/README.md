@@ -127,3 +127,11 @@ Se genera el certificado `smdp_auth_cert.pem` firmando la solicitud con la clave
 openssl x509 -req -in smdp_pb.csr -CA ca_cert.pem -CAkey ca_key.pem -set_serial 0x101 -days 1095 -extfile smdp_pb_ext.cnf -out smdp_pb_cert.pem
 ```
 
+### Certificado de TLS
+
+Cabe mencionar que el servidor se ha ejecutado en una instancia (<i>droplet</i>) de `DigitalOcean` utilizando `Nginx` y un certificado de TLS de `Let's Encrypt`. Además, se ha registrado un dominio para alojar el servicio.
+
+Para generar este certificado, se ejecuta la siguiente instrucción:
+```
+sudo certbot --nginx -d <dominio_resevado>
+```
