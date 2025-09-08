@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Este servidor implementa las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>.
+  Este servidor implementa las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del SM-DP+, descritas en el estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>.
 </p>
 
 ---
@@ -126,3 +126,4 @@ Se genera el certificado `smdp_auth_cert.pem` firmando la solicitud con la clave
 ```
 openssl x509 -req -in smdp_pb.csr -CA ca_cert.pem -CAkey ca_key.pem -set_serial 0x101 -days 1095 -extfile smdp_pb_ext.cnf -out smdp_pb_cert.pem
 ```
+
