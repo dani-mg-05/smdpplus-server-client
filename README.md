@@ -11,8 +11,8 @@
 <p align="justify">
 El contenido de este proyecto se divide en:
   <ul>
-    <li><strong>Servidor</strong>: Ejecuta las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del SM-DP+, descritas en el estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>.</li>
-    <li><strong>Cliente</strong>: Prepara las peticiones para ejecutar de manera correcta el servidor y comprobar su funcionamiento.
+    <li><strong>Servidor</strong>: Ejecuta las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del SM-DP+, descritas en el estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>. Está programado en Python 3 con el framework FastAPI.</li>
+    <li><strong>Cliente</strong>: Prepara las peticiones para ejecutar de manera correcta el servidor y comprobar su funcionamiento. Está programado en Android Studio con el lenguaje de programación Java.</li>
   </ul>
 </p>
 
