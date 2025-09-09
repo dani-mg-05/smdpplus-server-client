@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Este servidor implementa las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del SM-DP+, descritas en el estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>.
+  Este servidor implementa las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del SM-DP+, descritas en el estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>. Está programado en Python 3 con el framework FastAPI.
 </p>
 
 ---
@@ -135,3 +135,4 @@ Para generar este certificado, se ejecuta la siguiente instrucción:
 ```
 sudo certbot --nginx -d <dominio_resevado>
 ```
+
