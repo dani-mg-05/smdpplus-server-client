@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Esta aplicación agrupa parte de las funciones de un LPA y de una eUICC para verificar el funcionamiento del servidor SM-DP+, generando las peticiones necesarias para ejecutar las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del servidor, descritas en el estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>.
+  Esta aplicación agrupa parte de las funciones de un LPA y de una eUICC para verificar el funcionamiento del servidor SM-DP+, generando las peticiones necesarias para ejecutar las funciones <i>InitiateAuthentication</i>, <i>AuthenticateClient</i> y <i>GetBoundProfilePackage</i> del servidor, descritas en el estándar RSP definido por la GSMA en el documento <a href="https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2023/12/SGP.22-v3.1.pdf" target="blank">SGP.22</a>. Está programado en Android Studio con el lenguaje de programación Java.
 </p>
 
 ---
@@ -92,3 +92,4 @@ Se genera el certificado `euicc_cert.pem` firmando la solicitud con la clave pri
 ```
 openssl x509 -req -in euicc.csr -CA eum_cert.pem -CAkey eum_key.pem -set_serial 0x020000000000000001 -days 2000000 -extfile euicc_ext.cnf -out euicc_cert.pem
 ```
+
